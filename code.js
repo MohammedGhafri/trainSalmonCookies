@@ -99,9 +99,9 @@ function TableRendering() {
     var a = document.createElement('td')
     a.textContent = 'Total vertically';
     tr1.appendChild(a);
-    var vTot = 0;
     var vTotFinal = 0;
     for (var i = 0; i < olock.length; i++) {
+        var vTot = 0;
         for (var j = 0; j < Shops.all.length; j++) {
             vTot += Shops.all[j].saleR[i];
             if (i == 0) {
